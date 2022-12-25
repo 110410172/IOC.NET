@@ -1,0 +1,11 @@
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.GeneratedMSBuildEditorConfig.editorconfig
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.AssemblyInfoInputs.cache
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.AssemblyInfo.cs
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.csproj.CoreCompileInputs.cache
+D:\personal\opensouces\IOC.NET\IOC.NET\bin\Debug\netstandard2.0\IOC.NET.deps.json
+D:\personal\opensouces\IOC.NET\IOC.NET\bin\Debug\netstandard2.0\IOC.NET.dll
+D:\personal\opensouces\IOC.NET\IOC.NET\bin\Debug\netstandard2.0\IOC.NET.pdb
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.dll
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.pdb
+D:\personal\opensouces\IOC.NET\IOC.NET\bin\Debug\netstandard2.0\IOC.NET.xml
+D:\personal\opensouces\IOC.NET\IOC.NET\obj\Debug\netstandard2.0\IOC.NET.csproj.AssemblyReference.cache

@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IOC.NET</name>
+    </assembly>
+    <members>
+        <member name="T:IOC.NET.IScopedDependency">
+            <summary>
+            a scoped service
+            </summary>
+        </member>
+        <member name="T:IOC.NET.ISingletonDependency">
+            <summary>
+            a singleton service
+            </summary>
+        </member>
+        <member name="T:IOC.NET.ITransientDependency">
+            <summary>
+            a transient service
+            </summary>
+        </member>
+        <member name="M:IOC.NET.Engine.#ctor">
+            <summary>
+            CTOR
+            </summary>
+        </member>
+        <member name="M:IOC.NET.Engine.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="T:IOC.NET.IIOCEngine">
+            <summary>
+            IOC Engin
+            </summary>
+        </member>
+        <member name="M:IOC.NET.IIOCEngine.Resolve``1">
+            <summary>
+            Get specific type of service
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:IOC.NET.IIOCEngine.Resolve(System.Type)">
+            <summary>
+            Get specific type of service
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:IOC.NET.IIOCEngine.ResolveAll``1">
+            <summary>
+            Get specific type of services
+            </summary>
+            <typeparam name="T"></typeparam>
+            <returns></returns>
+        </member>
+        <member name="M:IOC.NET.IIOCEngine.ResolveUnregistered(System.Type)">
+            <summary>
+             Get specific type of unregistered services
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="T:IOC.NET.IOCException">
+            <summary>
+            IOC Exception
+            </summary>
+        </member>
+        <member name="M:IOC.NET.IOCException.#ctor">
+            <summary>
+            CTOR
+            </summary>
+        </member>
+        <member name="M:IOC.NET.IOCException.#ctor(System.String)">
+            <summary>
+            CTOR
+            </summary>
+            <param name="message"></param>
+        </member>
+        <member name="M:IOC.NET.IOCException.#ctor(System.String,System.Object[])">
+            <summary>
+            CTOR
+            </summary>
+            <param name="messageFormat"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:IOC.NET.IOCException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            
+            </summary>
+            <param name="info"></param>
+            <param name="context"></param>
+        </member>
+        <member name="M:IOC.NET.IOCException.#ctor(System.String,System.Exception)">
+            <summary>
+            
+            </summary>
+            <param name="message"></param>
+            <param name="innerException"></param>
+        </member>
+        <member name="T:IOC.NET.ServiceCollectionExtensions">
+            <summary>
+            Service Collection Extension
+            </summary>
+        </member>
+        <member name="M:IOC.NET.ServiceCollectionExtensions.AddIOC(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Add IOC
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="P:IOC.NET.AppDomainTypeFinder.AssemblyNames">
+            <summary>
+            Configuration property for store assembly name to load by the TypeFinder;
+            </summary>
+        </member>
+        <member name="M:IOC.NET.AppDomainTypeFinder.AddAssembliesInAppDomain(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Reflection.Assembly})">
+            <summary>
+            Gets the assemblies that have been loaded into the execution context of this application domain.
+            </summary>
+            <param name="addedAssemblyNames"></param>
+            <param name="assemblies"></param>
+        </member>
+        <member name="M:IOC.NET.AppDomainTypeFinder.AddConfiguredAssemblies(System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.Reflection.Assembly})">
+            <summary>
+            Load specific assembly in configuration property of AssemblyName;
+            </summary>
+            <param name="addedAssemblyNames"></param>
+            <param name="assemblies"></param>
+        </member>
+        <member name="M:IOC.NET.AppDomainTypeFinder.LoadMatchingAssemblies(System.String)">
+            <summary>
+            Load the assemblies in specific directory which have not been loaded by Microsoft framework. It is not dependent on each other initially.
+            </summary>
+            <param name="directoryPath">The directory path of assembly that has needed to load </param>
+        </member>
+        <member name="M:IOC.NET.AppDomainTypeFinder.FindClassesOfType``1(System.Collections.Generic.IEnumerable{System.Reflection.Assembly},System.Boolean)">
+            <summary>
+            Find types that is derived from T in the assemblies parameter
+            </summary>
+            <typeparam name="T">Parent type</typeparam>
+            <param name="assemblies">A assemblies by search for types is derived from T</param>
+            <param name="onlyConcreteClasses">The types is derived from T must be Class, rather then interface and others</param>
+            <returns>types is derived from T</returns>
+        </member>
+        <member name="M:IOC.NET.AppDomainTypeFinder.GetAssemblies">
+            <summary>
+            Gets the assemblies that have been loaded into the execution context of this application domain.
+            The assemblies which have been loaded by Microsoft framework. It is dependent on each other initially.
+            Also loaded the specific assemblies in configuration property of AssemblyNames;
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
