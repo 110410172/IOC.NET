@@ -2,18 +2,34 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageLicenseFile></PackageLicenseFile>
     <Description>Inversion of Control</Description>
     <Copyright>2019.jack.sun</Copyright>
     <PackageIcon>icon.png</PackageIcon>
     <PackageIconUrl />
     <RepositoryType>github</RepositoryType>
     <RepositoryUrl>https://github.com/110410172/IOC.NET.git</RepositoryUrl>
+    <Authors>jack.sun</Authors>
+    <AssemblyVersion>1.0.1.0</AssemblyVersion>
+    <FileVersion>1.0.1.0</FileVersion>
+    <Version>1.0.1</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageLicenseExpression>https://licenses.nuget.org/MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DocumentationFile>D:\personal\opensouces\IOC.NET\IOC.NET\IOC.NET.xml</DocumentationFile>
   </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="LICENSE" />
+    <None Remove="LICENSE" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
@@ -23,10 +39,6 @@
 
   <ItemGroup>
     <None Include="images\icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
-    <None Include="LICENSE">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
